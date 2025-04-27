@@ -23,23 +23,22 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2409.02189-blue?logo=arxiv&logoColor=orange)](https://arxiv.org/html/2410.14464v1)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-purple.svg)](https://scholar.google.nl/scholar?cluster=4185769924704359587&hl=zh-CN&as_sdt=0,5&as_vis=1)
 [![Project Page](https://img.shields.io/badge/Project%20Page-Online-brightgreen)](https://tang-jia-lu.github.io/projects/ECG_QA/)
-[![IEEE BigData 2024](https://img.shields.io/badge/IEEE%20BigData%202024-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
+[![IEEE ICASSP 2025](https://img.shields.io/badge/IEEE%20BigData%202024-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
 
 </div>
 
 
 ## 📢 Updates
-[11/2024] Released the project page [link](https://haoyuan-l.github.io/fedns/).
 
-[10/2024] Code has been released.
+[10/2024] Arxiv has been released.
 
-[10/2024] Accepted to IEEE BigData 2024
+[04/2025] Accepted to CHIL 2025
 
-[09/2024] [arXiv](http://www.arxiv.org/abs/2409.02189) paper has been released.
+[04/2025] [Code](link) code has been released.
 
 
 ## 📝 Abstract
-Federated learning (FL) has emerged as a prominent method for collaboratively training machine learning models using local data from edge devices, all while keeping data decentralized. However, accounting for the quality of data contributed by local clients remains a critical challenge in FL, as local data are often susceptible to corruption by various forms of noise and perturbations, which compromise the aggregation process and lead to a subpar global model. In this work, we focus on addressing the problem of noisy data in the input space, an under-explored area compared to the label noise. We propose a comprehensive assessment of client input in the gradient space, inspired by the distinct disparity observed between the density of gradient norm distributions of models trained on noisy and clean input data. Based on this observation, we introduce a straightforward yet effective approach to identify clients with low-quality data at the initial stage of FL. Furthermore, we propose a noise-aware FL aggregation method, namely **Fed**erated **N**oise-**S**ifting (**FedNS**), which can be used as a plug-in approach in conjunction with widely used FL strategies. Our extensive evaluation on diverse benchmark datasets under different federated settings demonstrates the efficacy of **FedNS**. Our method effortlessly integrates with existing FL strategies, enhancing the global model’s performance by up to 13.68% in IID and 15.85% in non-IID settings when learning from noisy decentralized data.
+Electrocardiogram (ECG) interpretation requires specialized expertise, often involving synthesizing insights from ECG signals with complex clinical queries posed in natural language. The scarcity of labeled ECG data coupled with the diverse nature of clinical inquiries presents a significant challenge for developing robust and adaptable ECG diagnostic systems. This work introduces a **novel multimodal meta-learning** method for **few-shot ECG question answering**, addressing the challenge of limited labeled data while leveraging the rich knowledge encoded within **large language models (LLMs)**. Our **LLM-agnostic approach** integrates a pre-trained ECG encoder with a frozen LLM (e.g., LLaMA and Gemma) via a trainable fusion module, enabling the language model to reason about ECG data and generate clinically meaningful answers. Extensive experiments demonstrate superior generalization to unseen diagnostic tasks compared to supervised baselines, achieving notable performance even with limited ECG leads. For instance, in a 5-way 5-shot setting, our method using LLaMA-3.1-8B achieves accuracy of 84.6%, 77.3%, and 69.6% on single verify, choose and query question types, respectively. These results highlight the potential of our method to enhance clinical ECG interpretation by combining signal processing with the nuanced language understanding capabilities of LLMs, particularly in **data-constrained scenarios**.
 
 <div align="center">
 <h3>⚓ Overview ⚓</h3>
