@@ -2,28 +2,28 @@
 <div align="center">
 
 <div>
-    <a href='https://www.linkedin.com/in/haoyuan-li-cs9654/' target='_blank'>Haoyuan Li</a><sup>1</sup>&emsp;
-    <a href='https://mathias-funk.com/' target='_blank'>Mathias Funk</a><sup>1</sup>&emsp;
-    <a href='https://nezihemervegurel.github.io/' target='_blank'>Nezihe Merve Gürel</a><sup>2</sup>&emsp;
+    <a href='https://tang-jia-lu.github.io/' target='_blank'>Jialu Tang</a><sup>1</sup>&emsp;
+    <a href='https://xtxiatong.github.io/' target='_blank'>Tong Xia</a><sup>2</sup>&emsp;
+    <a href=https://www.tue.nl/en/research/researchers/yuan-lu' target='_blank'>Yuan Lu</a><sup>1</sup>&emsp;
+    <a href='https://www.cl.cam.ac.uk/~cm542/' target='_blank'>Cecilia Mascolo</a><sup>2</sup>&emsp;
     <a href='https://aqibsaeed.github.io/' target='_blank'>Aaqib Saeed</a><sup>1</sup>&emsp;
 </div>
 <div>
 <sup>1</sup><a href="https://www.tue.nl/en/our-university/departments/industrial-design/research/our-research-labs/decentralized-artificial-intelligence-research-lab" target="_blank" rel="noopener noreferrer">
-                        Decentralized Artificial Intelligence Research Lab, Eindhoven University of Technology
+                        Decentralized Artificial Intelligence Research Lab, Eindhoven University of Technology, NL
                       </a>&emsp;
 
-<sup>2</sup>Delft University of Technology&emsp;
+<sup>2</sup>Technology at the University of Cambridge, UK;
 </div>
 </div>
 
 
 <div align="center">
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Decentralized-AI-Reserach-Lab.FedNS&left_color=blue&right_color=green)
-[![arXiv](https://img.shields.io/badge/arXiv-2409.02189-blue?logo=arxiv&logoColor=orange)](https://arxiv.org/abs/2409.02189)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-purple.svg)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Collaboratively+Learning+Federated+Models+from+Noisy+Decentralized+Data&btnG=)
-[![Project Page](https://img.shields.io/badge/Project%20Page-Online-brightgreen)](https://haoyuan-l.github.io/fedns/)
-[![IEEE BigData 2024](https://img.shields.io/badge/IEEE%20BigData%202024-Accepted-yellow.svg)](https://www3.cs.stonybrook.edu/~ieeebigdata2024/index.html)
+[![arXiv](https://img.shields.io/badge/arXiv-2409.02189-blue?logo=arxiv&logoColor=orange)](https://arxiv.org/html/2410.14464v1)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-purple.svg)](https://scholar.google.nl/scholar?cluster=4185769924704359587&hl=zh-CN&as_sdt=0,5&as_vis=1)
+[![Project Page](https://img.shields.io/badge/Project%20Page-Online-brightgreen)](https://tang-jia-lu.github.io/projects/ECG_QA/)
+[![IEEE BigData 2024](https://img.shields.io/badge/IEEE%20BigData%202024-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
 
 </div>
 
