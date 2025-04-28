@@ -42,7 +42,7 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
 
 <div align="center">
 <h3>⚓ Overview ⚓</h3>
-<img src="img/overview.png" width="95%">
+<img src="img/model_structure.gif" width="95%">
 <h3>📚 Three Pillars of FedNS</h3>
 </div>
 
