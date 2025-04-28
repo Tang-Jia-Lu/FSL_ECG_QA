@@ -34,7 +34,7 @@
 
 [04/2025] Accepted to CHIL 2025
 
-[04/2025] [Code](link) code has been released.
+[04/2025] [Code](link) & [Model](link) has been released.
 
 
 ## 📝 Abstract
@@ -46,9 +46,9 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
 <h3>📚 Three Pillars of FedNS</h3>
 </div>
 
-- **🔍 Noise Identification:** FedNS identifies noisy clients in the first training round (one-shot).
-- **🛡️ Resilient Aggregation:** A resilient strategy that minimizes the impact of noisy clients, ensuring robust model performance.
-- **🔒 Data Confidentiality:** Shares only scalar gradient norms to keep data confidential.
+- **🧩 Task Diversification:** Restructured ECG-QA tasks promote rapid few-shot adaptation.
+- **🔗 Fusion Mapping:** A lightweight multimodal mapper bridges ECG and language features.
+- **🌐 Model Generalization:** LLM-agnostic design ensures broad transferability and robustness.
 
 ## 🔧 Requirements
 ###  Environment 
