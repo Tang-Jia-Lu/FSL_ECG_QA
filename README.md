@@ -23,7 +23,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2409.02189-blue?logo=arxiv&logoColor=orange)](https://arxiv.org/html/2410.14464v1)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-purple.svg)](https://scholar.google.nl/scholar?cluster=4185769924704359587&hl=zh-CN&as_sdt=0,5&as_vis=1)
 [![Project Page](https://img.shields.io/badge/Project%20Page-Online-brightgreen)](https://tang-jia-lu.github.io/projects/ECG_QA/)
-[![IEEE ICASSP 2025](https://img.shields.io/badge/IEEE%20BigData%202024-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
+[![AHLI CHIL 2025](https://img.shields.io/badge/IEEE%20CHIL%202024-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
 
 </div>
 
