@@ -34,7 +34,7 @@
 
 [04/2025] Accepted to CHIL 2025
 
-[06/2025] [Code](link) & [Model](link) has been released.
+[06/2025] [Code](https://github.com/tang-jia-lu/ECG_QA), [Model](https://huggingface.co/jialucode/FSL_ECG_QA/), and [Dataset](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/) have been released.
 
 
 ## 📝 Abstract
