@@ -18,6 +18,8 @@ if torch.cuda.is_available():
 else:
     print('Inference on CPU!')
 
+PATH = str(Path.cwd())
+LOGS_PATH = PATH + "/logs/"
 
 def main_inference():
     gpt_tokenizer = AutoTokenizer.from_pretrained(args.model_name)
@@ -35,7 +37,7 @@ def main_inference():
     params_summed = sum(p.numel() for p in params)
     print("Total num of params: {} ".format(params_summed))
     
-    log_file_path = args.log_path + "log_{}.txt".format(experiment_id)
+    log_file_path = LOGS_PATH + "log_{}.txt".format(experiment_id)
     write_data_to_txt(log_file_path, "Experiment ID: {} Date: {}, {}-way, {}-shot (support), {}-shot (query), Test Dataset: {}\n"
                       .format(experiment_id, datetime.datetime.now(), args.n_way, args.k_spt, args.k_qry, args.test_dataset))
 
@@ -127,7 +129,7 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--experiment_id', type=int, default=123456)
     argparser.add_argument('--batchsz_test', type=int, default=10)
-    argparser.add_argument('--paraphrased_path', type=str, default='/gpfs/home1/jtang1/multimodal_fsl_99/paraphrased',
+    argparser.add_argument('--paraphrased_path', type=str, default='ecgqa/ptbxl/paraphrased/',
                           help='path to ./paraphrased containing train/val/test ECG-QA json files')
     argparser.add_argument('--test_dataset', type=str, default="ptb-xl", choices=["ptb-xl", "mimic"], 
                           help='Dataset to use (ptb-xl or mimic)')
@@ -153,15 +155,13 @@ if __name__ == '__main__':
     argparser.add_argument('--task_num', type=int, help='meta batch size, namely task num', default=1)
     argparser.add_argument('--update_lr', type=float, help='task-level inner update learning rate', default=0.05)
     argparser.add_argument('--num_workers', type=int, default=8)
-    argparser.add_argument('--log_path', type=str, default="/gpfs/home1/jtang1/multimodal_fsl_99/logs/", 
-                          help='Log directory')
     argparser.add_argument('--meta_lr', type=float, help='meta-level outer learning rate', default=5e-4)
     argparser.add_argument('--update_step', type=int, help='task-level inner update steps', default=15)
     argparser.add_argument('--update_step_test', type=int, help='update steps for fine-tunning', default=15)
     args = argparser.parse_args()
     
     experiment_id = "{}_{}-way_{}-shot{}".format(args.experiment_id, args.n_way, args.k_spt, args.model_type)
-    log_file_path = args.log_path + "log_{}.txt".format(experiment_id)
+    log_file_path = LOGS_PATH + "log_{}.txt".format(experiment_id)
     write_data_to_txt(log_file_path, "Inference started. Experiment ID: {} Date: {}\n"
                       .format(args.experiment_id, datetime.datetime.now()))
                       

@@ -19,6 +19,8 @@ if torch.cuda.is_available():
 else:
     print('Training on CPU!')
 
+PATH = str(Path.cwd())
+LOGS_PATH = PATH + "/logs/"
 
 def write_data_to_txt(file_path, data):
     # Create the directory if it doesn't exist
@@ -44,7 +46,7 @@ def main_episodic():
     params = list(filter(lambda p: p.requires_grad, meta.model.parameters()))
     params_summed = sum(p.numel() for p in params)
     print("Total num of params: {} ".format(params_summed))
-    log_file_path = args.log_path + "log_{}.txt".format(experiment_id)
+    log_file_path = LOGS_PATH + "log_{}.txt".format(experiment_id)
     write_data_to_txt(log_file_path, "Experiment ID: {} Date: {}, {}-way, {}-shot (support), {}-shot (query), Mapper: {}".format(experiment_id, datetime.datetime.now(),args.n_way, args.k_spt, args.k_qry,args.mapper_type))
 
     class_qa, train_temp, test_temp = prepare_ecg_qa_data(args)  
@@ -62,7 +64,7 @@ def main_episodic():
     db_test = DataLoader(data_loader_test, batch_size=args.task_num, shuffle=True, num_workers=args.num_workers,
                             pin_memory=True)
     
-    for epoch in range(args.epoch // 10000):
+    for epoch in range(args.epoch):
         for step, batch in enumerate(db_train):
             (
                 x_spt, y_spt_q, y_spt_a, y_spt_mask_q, y_spt_mask_a, id_spt,
@@ -93,7 +95,7 @@ def main_episodic():
                     f"{args.mapper_type}-mapper {args.prefix_length}-prefix tokens------"
                 )
                 write_data_to_txt(
-                    file_path=args.log_path + f"log_{experiment_id}.txt",
+                    file_path=LOGS_PATH + f"log_{experiment_id}.txt",
                     data=f"Step: {step} \tTraining acc: {accs} \n"
                 )
                 meta.save_mapper_model(para="")
@@ -135,17 +137,18 @@ if __name__ == '__main__':
 
     argparser.add_argument('--experiment_id', type=int, default=123456)
     argparser.add_argument('--batchsz_train', type=int, default=10000)
-    argparser.add_argument('--batchsz_test', type=int, default=10)
-    argparser.add_argument('--paraphrased_path', type=str, default='/gpfs/home1/jtang1/multimodal_fsl_99/paraphrased',
-                        #default='path/to/paraphrased', 
+    argparser.add_argument('--batchsz_test', type=int, default=1000)
+    argparser.add_argument('--paraphrased_path', type=str, default='/ecgqa/ptbxl/paraphrased/',
                           help='path to ./paraphrased containing trian/val/test ECG-QA json files')
     argparser.add_argument('--test_dataset', type=str, default="ptb-xl", choices=["ptb-xl", "mimic"], help='Dataset to use (ptb-xl or mimic)')
-    argparser.add_argument('--model_name', type=str, help="3-/gpfs/home4/jtang/multimodal_fsl/src/llama3_1/,1sc-1355all--microsoft/phi-2,2sc-23all-22sq-21sv-2355all-/gpfs/home1/jtang1/multimodal_fsl_99/src/gamma/", default="/gpfs/home1/jtang1/multimodal_fsl_99/mimic_iv_infer/LLARVA/llama3_2_1B/")
+    argparser.add_argument('--model_name', type=str, help="path to llm model",
+                           default="/llm_checkpoint/llama3.1-8b") 
+                        #    default="/gpfs/home1/jtang1/multimodal_fsl_99/mimic_iv_infer/LLARVA/llama3_2_1B/")
     argparser.add_argument('--model_type', type=str, help='model need to test', default="") # "acc_1" "acc2" "
     argparser.add_argument('--data_root', type=str, default='ecg_qa')
     argparser.add_argument('--data_path', type=str, help='the path to datasets', default='/home/jtang/data/ecg_qa_500')
     argparser.add_argument('--question_type', type=str, help='question types, single-verify, single-choose, single-query, all', default='single-verify')
-    argparser.add_argument('--epoch', type=int, help='epoch number', default=10000)
+    argparser.add_argument('--epoch', type=int, help='epoch number', default=1)
     argparser.add_argument('--n_way', type=int, help='n way', default=5)
     argparser.add_argument('--k_spt', type=int, help='k shot for support set', default=5)
     argparser.add_argument('--k_qry', type=int, help='k shot for query set', default=5)
@@ -164,7 +167,6 @@ if __name__ == '__main__':
     argparser.add_argument('--update_step', type=int, help='task-level inner update steps', default=15)
     argparser.add_argument('--update_step_test', type=int, help='update steps for fine-tunning', default=15)
     argparser.add_argument('--num_workers', type=int, default=8)
-    argparser.add_argument('--log_path', type=str, default="/gpfs/home1/jtang1/multimodal_fsl_99/logs/", help='Log directory')
 
     args = argparser.parse_args()
 

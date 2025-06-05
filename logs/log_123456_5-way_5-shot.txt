@@ -1,0 +1,287 @@
+Experiment ID: 123456_5-way_5-shot Date: 2025-06-05 19:49:13.959444, 5-way, 5-shot (support), 5-shot (query), Mapper: MLPStep: 0 	Training acc: [0.   0.   0.   0.06 0.14 0.28 0.32 0.36 0.36 0.34 0.4  0.4  0.4  0.4
+ 0.46 0.44] 
+Step: 100 	Training acc: [0.5  0.76 0.94 0.86 0.88 0.9  0.9  0.94 0.92 0.88 0.88 0.9  0.9  0.86
+ 0.92 0.9 ] 
+Inference started. Experiment ID: 123456 Date: 2025-06-05 20:24:16.225420
+Experiment ID: 123456_5-way_5-shot Date: 2025-06-05 20:24:21.439539, 5-way, 5-shot (support), 5-shot (query), Test Dataset: ptb-xl
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 0 	Test acc: (array([0.  , 0.  , 0.  , 0.08, 0.18, 0.3 , 0.32, 0.34, 0.46, 0.4 , 0.44,
+       0.44, 0.46, 0.48, 0.5 , 0.5 ]), {'f1_bertscore': 0.6003358483314514, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: CatchQuestion
+GT answer: yes, Pred. answer: HurQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: hômQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: venirQuestion
+GT answer: no, Pred. answer: affenQuestion
+GT answer: no, Pred. answer: LakeQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: akuQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 1 	Test acc: (array([0.  , 0.  , 0.02, 0.06, 0.14, 0.28, 0.22, 0.32, 0.34, 0.38, 0.36,
+       0.36, 0.42, 0.38, 0.4 , 0.36]), {'f1_bertscore': 0.5450506603717804, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: maskQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: icutQuestion
+GT answer: yes, Pred. answer: ImmediatelyQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: ityQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: adayQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: writQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: candidateQuestion
+Step: 2 	Test acc: (array([0.  , 0.  , 0.  , 0.06, 0.16, 0.18, 0.28, 0.3 , 0.38, 0.38, 0.3 ,
+       0.34, 0.42, 0.38, 0.44, 0.36]), {'f1_bertscore': 0.5434129559993743, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: kQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: lanQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: .bandQuestion
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: popQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 3 	Test acc: (array([0.  , 0.  , 0.  , 0.02, 0.16, 0.32, 0.22, 0.34, 0.38, 0.42, 0.44,
+       0.42, 0.4 , 0.44, 0.4 , 0.42]), {'f1_bertscore': 0.5800905382633209, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: requestQuestion
+GT answer: no, Pred. answer: 尼Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: ownQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 4 	Test acc: (array([0.  , 0.  , 0.  , 0.06, 0.12, 0.26, 0.32, 0.38, 0.44, 0.36, 0.46,
+       0.44, 0.42, 0.46, 0.46, 0.44]), {'f1_bertscore': 0.57079430103302, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: androidQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: GodQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 5 	Test acc: (array([0.  , 0.  , 0.02, 0.04, 0.06, 0.2 , 0.24, 0.28, 0.36, 0.4 , 0.4 ,
+       0.36, 0.44, 0.42, 0.36, 0.44]), {'f1_bertscore': 0.5869377112388611, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: VOQuestion
+GT answer: no, Pred. answer: deliveryQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: ylumQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+Step: 6 	Test acc: (array([0.  , 0.  , 0.  , 0.04, 0.1 , 0.2 , 0.3 , 0.3 , 0.4 , 0.36, 0.42,
+       0.4 , 0.4 , 0.4 , 0.42, 0.42]), {'f1_bertscore': 0.578693186044693, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: stateQuestion
+GT answer: no, Pred. answer: サイQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: LettersQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 7 	Test acc: (array([0.  , 0.  , 0.  , 0.02, 0.18, 0.26, 0.28, 0.44, 0.38, 0.38, 0.46,
+       0.46, 0.4 , 0.46, 0.44, 0.44]), {'f1_bertscore': 0.5725713121891022, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: yes, Pred. answer: ouxQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: writeQuestion
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: azorQuestion
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 8 	Test acc: (array([0.  , 0.  , 0.  , 0.06, 0.1 , 0.22, 0.36, 0.36, 0.38, 0.4 , 0.4 ,
+       0.48, 0.42, 0.44, 0.44, 0.44]), {'f1_bertscore': 0.567809556722641, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+GT answer: no, Pred. answer: seQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: dressingQuestion
+GT answer: no, Pred. answer: NewQuestion
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: "Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: Question
+GT answer: no, Pred. answer: igitQuestion
+GT answer: no, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+GT answer: yes, Pred. answer: Question
+Step: 9 	Test acc: (array([0.  , 0.  , 0.  , 0.02, 0.1 , 0.18, 0.22, 0.24, 0.3 , 0.34, 0.4 ,
+       0.42, 0.4 , 0.4 , 0.38, 0.4 ]), {'f1_bertscore': 0.5741535127162933, 'meteor': 0.0, 'rouge': 0.0}, {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0})
+FINAL METRICS:
+  BERTScore F1: 0.5720
+  METEOR: 0.0000
+  ROUGE: 0.0000
+  BLEU-1: 0.0000
+  BLEU-2: 0.0000
+  BLEU-3: 0.0000
+  BLEU-4: 0.0000
+FINAL: 	Test acc: [0.    0.    0.004 0.046 0.13  0.24  0.276 0.33  0.382 0.382 0.408 0.412
+ 0.418 0.426 0.424 0.422] 
+Experiment completed: 123456_5-way_5-shot Date: 2025-06-05 20:27:34.229178
