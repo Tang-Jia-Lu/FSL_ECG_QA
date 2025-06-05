@@ -9,11 +9,9 @@
     <a href='https://aqibsaeed.github.io/' target='_blank'>Aaqib Saeed</a><sup>1</sup>&emsp;
 </div>
 <div>
-<sup>1</sup><a href="https://www.tue.nl/en/our-university/departments/industrial-design/research/our-research-labs/decentralized-artificial-intelligence-research-lab" target="_blank" rel="noopener noreferrer">
-                        Decentralized Artificial Intelligence Research Lab, Eindhoven University of Technology, NL
-                      </a>&emsp;
+<sup>1</sup>Eindhoven University of Technology, NL&emsp;
 
-<sup>2</sup>Technology at the University of Cambridge, UK;
+<sup>2</sup>University of Cambridge, UK
 </div>
 </div>
 
@@ -21,16 +19,11 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2409.02189-blue?logo=arxiv&logoColor=orange)](https://arxiv.org/html/2410.14464v1)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-purple.svg)](https://scholar.google.nl/scholar?cluster=4185769924704359587&hl=zh-CN&as_sdt=0,5&as_vis=1)
-[![Project Page](https://img.shields.io/badge/Project%20Page-Online-brightgreen)](https://tang-jia-lu.github.io/projects/ECG_QA/)
-[![AHLI CHIL 2025](https://img.shields.io/badge/IEEE%20CHIL%202025-Accepted-yellow.svg)](https://ieeexplore.ieee.org/document/10888594)
 
 </div>
 
 
 ## 📢 Updates
-
-[10/2024] Arxiv has been released.
 
 [04/2025] Accepted to CHIL 2025
 
