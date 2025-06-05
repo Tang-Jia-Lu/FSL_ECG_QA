@@ -1,0 +1,6 @@
+Inference on GPU!
+Total num of params: 8932352 
+Loaded 414348 samples!
+shuffle DB: test, b:10, 5-way, 5-shot, 5-query, 0-repeats
+Num. of tasks: 10
+Average BMR Results: {'f1_bertscore': 0.5928995990753174, 'meteor': 0.0, 'rouge': 0.0} {'BLEU-1': 0.0, 'BLEU-2': 0.0, 'BLEU-3': 0.0, 'BLEU-4': 0.0}

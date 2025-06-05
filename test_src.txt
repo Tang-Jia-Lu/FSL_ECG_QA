@@ -1,0 +1,14 @@
+
+JOB STATISTICS
+==============
+Job ID: 12208746
+Cluster: snellius
+User/Group: jtang1/jtang1
+State: TIMEOUT (exit code 0)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:04
+CPU Efficiency: 0.01% of 15:06:18 core-walltime
+Job Wall-clock time: 00:50:21
+Memory Utilized: 2.16 GB
+Memory Efficiency: 1.80% of 120.00 GB (120.00 GB/node)
