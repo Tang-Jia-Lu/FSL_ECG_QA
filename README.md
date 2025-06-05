@@ -75,6 +75,10 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
 
 The ECG-QA dataset used in this project can be accessed from [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/blob/main/). Please download the dataset files from the provided link and follow the instructions in the repository for usage.
 
+### Model Weight
+
+
+
 ## 💡 Running scripts
 
 To prepare your experiment, please setup your configuration at the main.py. You can configure the specific federated learning strategy at server.py. You can simply execute the main script them to run the experiment, the results will save as a `logs` file.
@@ -85,18 +89,16 @@ python main.py
 ```
 
 ## 💭 Correspondence
-If you have any questions, please contact me via [email](h.y.li@tue.nl) or open an [issue](https://github.com/Decentralized-AI-Reserach-Lab/FedNS/issues).
+If you have any questions or suggestions, feel free to reach out via [email](mailto:jialu.tang@tue.nl) or open an [issue](https://github.com/tang-jia-lu/ECG_QA/issues) on GitHub.
 
 ## Citing FedNS
-The code repository for "[Collaboratively Learning Federated Models from Noisy Decentralized Data](https://arxiv.org/abs/2409.02189)" (IEEE BigData 2024) in PyTorch.  If you use any content of this repo for your work, please cite the following bib entry: 
+If you use any content from this repository for your work, please cite the following:
 
 ```bibtex
-@inproceedings{li2024collaboratively,
-  title={Collaboratively Learning Federated Models from Noisy Decentralized Data},
-  author={Li, Haoyuan and Funk, Mathias and G{\"u}rel, Nezihe Merve and Saeed, Aaqib},
-  booktitle={2024 IEEE International Conference on Big Data (BigData)},
-  pages={7879--7888},
-  year={2024},
-  organization={IEEE}
+@article{tang2024electrocardiogram,
+  title={Electrocardiogram-Language Model for Few-Shot Question Answering with Meta Learning},
+  author={Tang, Jialu and Xia, Tong and Lu, Yuan and Mascolo, Cecilia and Saeed, Aaqib},
+  journal={arXiv preprint arXiv:2410.14464},
+  year={2024}
 }
 ```

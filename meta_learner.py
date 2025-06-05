@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from torch import nn
 from torch.nn import functional as F
-from fairseq_cli.extract_model import hydra_main
+from extract_model import hydra_main
 from utils import set_device
 from transformers import AutoTokenizer
 

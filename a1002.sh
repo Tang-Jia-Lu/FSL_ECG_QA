@@ -20,4 +20,4 @@ source ~/.bashrc
 conda env list
 conda activate mm_fsl2
 
-nohup  python "/gpfs/home1/jtang1/multimodal_fsl_99/src/inference.py" > train2out
+nohup  python "/gpfs/home1/jtang1/multimodal_fsl_99/src/inference.py" > train2.out

@@ -10,7 +10,7 @@ from torch.nn import functional as F
 from meta_learner import MetaLearner
 from utils import *
 
-PATH = str(Path.cwd().parent)
+PATH = str(Path.cwd())
 MODELS_PATH = PATH + "/models/"
 
 class MetaTrainer(nn.Module):

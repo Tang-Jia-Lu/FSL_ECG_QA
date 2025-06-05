@@ -77,33 +77,49 @@ def main_inference():
         y_qry_mask_a = y_qry_mask_a.to(device)
         # qry_img_id stays on CPU
 
-        accs, metrics = meta_trainer.finetunning(
+        accs = meta_trainer.finetunning(
             x_spt, y_spt_q, y_spt_a, y_spt_mask_q, y_spt_mask_a,
             x_qry, y_qry_q, y_qry_mask_q, y_qry_mask_a, y_qry_a, qry_img_id
         )
         
         accs_all_test.append(accs)
-        metrics_results.append(metrics)
         
         print("------ Meta-test {}-way, {}-shot ({}-query) ------".format(args.n_way, args.k_spt, args.k_qry))
         print("Step: {} \tTest acc: {}\n".format(step, accs))
         write_data_to_txt(file_path=log_file_path, 
-                          data="Step: {} \tTest acc: {}, Metrics: {}\n".format(step, accs, metrics))
+                          data="Step: {} \tTest acc: {}\n".format(step, accs))
 
     # Calculate average accuracy across all test tasks
-    accs = np.array(accs_all_test).mean(axis=0).astype(np.float16)
+    # Extract just the array portion from each tuple in accs_all_test
+    acc_arrays = [item[0] for item in accs_all_test]
     
-    # Calculate average metrics
-    avg_metrics = {}
-    if metrics_results and isinstance(metrics_results[0], dict):
-        keys = metrics_results[0].keys()
-        for key in keys:
-            avg_metrics[key] = np.mean([result[key] for result in metrics_results if key in result])
+    # Now compute the mean of just the accuracy arrays
+    accs = np.array(acc_arrays).mean(axis=0).astype(np.float16)
     
+    # If you need mean metrics, calculate them separately
+    avg_bertscore = np.mean([item[1]['f1_bertscore'] for item in accs_all_test])
+    avg_meteor = np.mean([item[1]['meteor'] for item in accs_all_test])
+    avg_rouge = np.mean([item[1]['rouge'] for item in accs_all_test])
+    
+    avg_bleu1 = np.mean([item[2]['BLEU-1'] for item in accs_all_test])
+    avg_bleu2 = np.mean([item[2]['BLEU-2'] for item in accs_all_test])
+    avg_bleu3 = np.mean([item[2]['BLEU-3'] for item in accs_all_test])
+    avg_bleu4 = np.mean([item[2]['BLEU-4'] for item in accs_all_test])
+
+    metrics_str = (
+        f"FINAL METRICS:\n"
+        f"  BERTScore F1: {avg_bertscore:.4f}\n"
+        f"  METEOR: {avg_meteor:.4f}\n"
+        f"  ROUGE: {avg_rouge:.4f}\n"
+        f"  BLEU-1: {avg_bleu1:.4f}\n"
+        f"  BLEU-2: {avg_bleu2:.4f}\n"
+        f"  BLEU-3: {avg_bleu3:.4f}\n"
+        f"  BLEU-4: {avg_bleu4:.4f}\n"
+    )
+    
+    write_data_to_txt(file_path=log_file_path, data=metrics_str)
     print("FINAL: \tTest acc: {} \n".format(accs))
-    print("FINAL: \tAverage metrics: {} \n".format(avg_metrics))
     write_data_to_txt(file_path=log_file_path, data="FINAL: \tTest acc: {} \n".format(accs))
-    write_data_to_txt(file_path=log_file_path, data="FINAL: \tAverage metrics: {} \n".format(avg_metrics))
     write_data_to_txt(log_file_path, "Experiment completed: {} Date: {}\n".format(experiment_id, datetime.datetime.now()))
 
 

@@ -1,0 +1,19 @@
+Model output shape: torch.Size([1, 312, 768])
+ignals/fairseq_signals/utils/checkpoint_utils.py:268: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f, map_location = torch.device("cpu"))
+/home/jtang1/.conda/envs/mm_fsl2/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:134: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+
+JOB STATISTICS
+==============
+Job ID: 12211856
+Cluster: snellius
+User/Group: jtang1/jtang1
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 00:00:10
+CPU Efficiency: 2.50% of 00:06:40 core-walltime
+Job Wall-clock time: 00:00:25
+Memory Utilized: 1.49 MB
+Memory Efficiency: 0.00% of 32.00 GB (2.00 GB/core)

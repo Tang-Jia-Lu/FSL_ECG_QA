@@ -14,7 +14,7 @@ already available
 on the system, please use 'module avail' or 'module spider' to search for it.
 ============================================================================================== 
 usage: conda [-h] [--no-plugins] [-V] COMMAND ...
-conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'env', 'server', 'repo', 'content-trust', 'pack', 'verify', 'token')
+conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'server', 'content-trust', 'pack', 'token', 'env', 'verify', 'repo')
 no change     /sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/condabin/conda
 no change     /sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/bin/conda
 no change     /sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/bin/conda-env
@@ -42,76 +42,28 @@ base                  *  /sw/arch/RHEL8/EB_production/2023/software/Anaconda3/20
 [nltk_data] Downloading package omw-1.4 to /home/jtang1/nltk_data...
 [nltk_data]   Package omw-1.4 is already up-to-date!
 We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
 Traceback (most recent call last):
-  File "/gpfs/home1/jtang1/multimodal_fsl_99/src/inference.py", line 152, in <module>
+  File "/gpfs/home1/jtang1/multimodal_fsl_99/src/inference.py", line 168, in <module>
     main_inference()
   File "/gpfs/home1/jtang1/multimodal_fsl_99/src/inference.py", line 80, in main_inference
-    accs, metrics = meta_trainer.finetunning(
-ValueError: too many values to unpack (expected 2)
+    accs = meta_trainer.finetunning(
+  File "/gpfs/home1/jtang1/multimodal_fsl_99/src/meta_trainer.py", line 159, in finetunning
+    write_data_to_txt(self.log_file_path, ("GT answer: {}, Pred. answer: {}\n".format(gt_answer, pred_answer)))
+  File "/gpfs/home1/jtang1/multimodal_fsl_99/src/meta_trainer.py", line 206, in write_data_to_txt
+    with open(file_path, 'w') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/home1/jtang1/multimodal_fsl_99/src/logs/log_123456_5-way_5-shot.txt'
 
 JOB STATISTICS
 ==============
-Job ID: 12210025
+Job ID: 12212541
 Cluster: snellius
 User/Group: jtang1/jtang1
 State: RUNNING
 Nodes: 1
 Cores per node: 18
 CPU Utilized: 00:00:00
-CPU Efficiency: 0.00% of 00:20:06 core-walltime
-Job Wall-clock time: 00:01:07
+CPU Efficiency: 0.00% of 00:17:42 core-walltime
+Job Wall-clock time: 00:00:59
 Memory Utilized: 0.00 MB
 Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
 WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.
