@@ -81,12 +81,70 @@ Download from here: [Hugging Face - FSL_ECG_QA](https://huggingface.co/jialucode
 ## 💡 Running scripts
 
 ```bash
-python train.py --experiment_id 1 --n_way 5 --k_spt 5 --k_qry 5
+python train.py \
+  --experiment_id 1 \
+  --batchsz_train 10000 \
+  --batchsz_test 1000 \
+  --paraphrased_path /ecgqa/ptbxl/paraphrased/ \
+  --test_dataset ptb-xl \
+  --model_name /llm_checkpoint/llama3.1-8b \
+  --model_type "" \
+  --data_root ecg_qa \
+  --data_path /home/jtang/data/ecg_qa_500 \
+  --question_type single-verify \
+  --epoch 1 \
+  --n_way 5 \
+  --k_spt 5 \
+  --k_qry 5 \
+  --prompt 1 \
+  --dif_exp 0 \
+  --frozen_gpt 1 \
+  --frozen_features 1 \
+  --repeats 0 \
+  --seq_len 30 \
+  --seq_len_a 30 \
+  --prefix_length 4 \
+  --mapper_type MLP \
+  --task_num 1 \
+  --meta_lr 5e-4 \
+  --update_lr 0.05 \
+  --update_step 15 \
+  --update_step_test 15 \
+  --num_workers 8
 ```
 
 ## 🚀 Model Inference
 
+To run inference with all available arguments, use the following command:
 
+```bash
+python inference.py \
+  --experiment_id 1 \
+  --batchsz_test 10 \
+  --paraphrased_path ecgqa/ptbxl/paraphrased/ \
+  --test_dataset ptb-xl \
+  --model_type "" \
+  --model_name /gpfs/home1/jtang1/multimodal_fsl_99/mimic_iv_infer/LLARVA/llama3_2_1B/ \
+  --question_type single-verify \
+  --n_way 5 \
+  --k_spt 5 \
+  --k_qry 5 \
+  --prompt 1 \
+  --dif_exp 0 \
+  --frozen_gpt 1 \
+  --frozen_features 1 \
+  --repeats 0 \
+  --seq_len 30 \
+  --seq_len_a 30 \
+  --prefix_length 4 \
+  --mapper_type MLP \
+  --task_num 1 \
+  --update_lr 0.05 \
+  --num_workers 8 \
+  --meta_lr 5e-4 \
+  --update_step 15 \
+  --update_step_test 15
+```
 
 ## 💭 Correspondence
 If you have any questions or suggestions, feel free to reach out via [email](mailto:jialu.tang@tue.nl) or open an [issue](https://github.com/tang-jia-lu/ECG_QA/issues) on GitHub.
