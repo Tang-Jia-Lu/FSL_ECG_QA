@@ -34,7 +34,7 @@
 
 [04/2025] Accepted to CHIL 2025
 
-[04/2025] [Code](link) & [Model](link) has been released.
+[06/2025] [Code](link) & [Model](link) has been released.
 
 
 ## 📝 Abstract
@@ -52,19 +52,28 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
 
 ## 🔧 Requirements
 ###  Environment 
-1. [torch 2.2.0+cu118](https://github.com/pytorch/pytorch)
-2. [torchvision 0.17.0+cu118](https://github.com/pytorch/vision)
-3. [numpy 1.21.6](https://github.com/numpy/numpy.git)
-3. [flwr 0.6.12](https://github.com/adap/flower)
+
+1. **Clone and install [fairseq-signals](https://github.com/Jwoo5/fairseq-signals):**
+  ```bash
+  git clone https://github.com/Jwoo5/fairseq-signals.git
+  cd fairseq-signals
+  pip install --editable ./
+  ```
+
+2. **Python version:**  
+  Python 3.8
+
+3. **Install dependencies:**
+  ```bash
+  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  pip install hydra-core omegaconf
+  pip install numpy scipy scikit-learn wfdb
+  ```
+
 
 ### Dataset 
-We provide the noisy dataset creation on various benchmarks, we shown an example of generating noisy CIFAR10:
-- **CIFAR10**:
-```
-cd ./data/cifar10data
-python create_cifar10_noisy.py
-```
-For benchmark on human annoation errors, you can refer to [CIFAR10/100N](https://github.com/UCSC-REAL/cifar-10-100n). For decentralized data generation, please go to folder [.\src_fed](https://github.com/Decentralized-AI-Reserach-Lab/FedNS/tree/main/src_fed/cifar10).
+
+The ECG-QA dataset used in this project can be accessed from [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/blob/main/). Please download the dataset files from the provided link and follow the instructions in the repository for usage.
 
 ## 💡 Running scripts
 
