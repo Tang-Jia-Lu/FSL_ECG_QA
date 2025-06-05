@@ -5,3 +5,4 @@ llama3_1/
 a100.sh
 a1002.sh
 my_job.sh
+__pycache__

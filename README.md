@@ -71,12 +71,13 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
   ```
 
 
-### Dataset 
+### 📊 Dataset
 
-The ECG-QA dataset used in this project can be accessed from [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/). Please download the dataset files from the provided link and follow the instructions in the repository for usage.
+The ECG-QA dataset used in this project is available on [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/). Please download the dataset from the link and follow the usage instructions provided in the repository.
 
-### Model Weight
-Download from here: [Hugging Face - FSL_ECG_QA](https://huggingface.co/jialucode/FSL_ECG_QA/)
+### 🏋️ Model Weights
+
+Pre-trained model weights can be downloaded from [Hugging Face - FSL_ECG_QA](https://huggingface.co/jialucode/FSL_ECG_QA/).
 
 ## 💡 Running scripts
 
