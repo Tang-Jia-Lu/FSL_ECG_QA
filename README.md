@@ -73,20 +73,20 @@ Electrocardiogram (ECG) interpretation requires specialized expertise, often inv
 
 ### Dataset 
 
-The ECG-QA dataset used in this project can be accessed from [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/blob/main/). Please download the dataset files from the provided link and follow the instructions in the repository for usage.
+The ECG-QA dataset used in this project can be accessed from [Hugging Face](https://huggingface.co/datasets/jialucode/FSL_ECG_QA_Dataset/). Please download the dataset files from the provided link and follow the instructions in the repository for usage.
 
 ### Model Weight
-
-
+Download from here: [Hugging Face - FSL_ECG_QA](https://huggingface.co/jialucode/FSL_ECG_QA/)
 
 ## 💡 Running scripts
 
-To prepare your experiment, please setup your configuration at the main.py. You can configure the specific federated learning strategy at server.py. You can simply execute the main script them to run the experiment, the results will save as a `logs` file.
+```bash
+python train.py --experiment_id 1 --n_way 5 --k_spt 5 --k_qry 5
+```
 
-```
-cd ./scr_fed/cifar10
-python main.py
-```
+## 🚀 Model Inference
+
+
 
 ## 💭 Correspondence
 If you have any questions or suggestions, feel free to reach out via [email](mailto:jialu.tang@tue.nl) or open an [issue](https://github.com/tang-jia-lu/ECG_QA/issues) on GitHub.
