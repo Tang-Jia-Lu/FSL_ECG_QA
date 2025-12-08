@@ -118,7 +118,7 @@ python inference.py \
   --paraphrased_path ecgqa/ptbxl/paraphrased/ \
   --test_dataset ptb-xl \
   --model_type "" \
-  --model_name /gpfs/home1/jtang1/multimodal_fsl_99/mimic_iv_infer/LLARVA/llama3_2_1B/ \
+  --model_name /llm_checkpoint/llama3.1-8b \
   --question_type single-verify \
   --n_way 5 \
   --k_spt 5 \
